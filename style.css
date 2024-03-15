@@ -19,6 +19,7 @@ body{
 }
 
 header{
+    position: relative;
     width: 85%;
     height: 95%;
     display: flex;
@@ -352,5 +353,99 @@ header .master_play .vol .vol_dot::before{
     border-radius: 50%;
     left: -6px;
     top: -6px;
-    box-shadow: inset 0px 0px 3px #36e2ec;
+    box-shadow: inset 0px 0px 3px rgb(54, 226, 236);
+}
+header .song_side::before{
+    content: '';
+    position: absolute;
+    background: url('Images/RadhaKrishna-bg.jpg');
+    background-size: 108%;
+    width: 290px;
+    height: 290px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 40px 5px rgba(54, 226, 236, 0.5);
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 38%;
+    z-index: -1;
+}
+header .song_side{
+    z-index: 2;
+}
+header .song_side nav{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .song_side nav ul{
+    display: flex;
+}
+header .song_side nav ul li{
+    list-style: none;
+    position: relative;
+    font-size: 13px;
+    color: #4c5262;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header .song_side nav ul li:hover{
+    color: #fff;
+}
+header .song_side nav ul li:nth-child(1){
+    color: #fff;
+}
+header .song_side nav ul li span{
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background: #36e2ec;
+    bottom: -5px;
+    left: 0px;
+    border-radius: 20px;
+}
+header .song_side nav .search{
+    position: relative;
+    width: 40%;
+    padding: 1px 10px;
+    border-radius: 20px;
+    color: grey;
+}
+header .song_side nav .search::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184, .1);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header .song_side nav .search .bi{
+    font-size: 13px;
+    padding: 3px 0px 0px 10px;
+}
+header .song_side nav .search input{
+    width: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+header .song_side nav .user{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+header .song_side nav .user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #121213;
 }
