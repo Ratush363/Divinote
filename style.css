@@ -72,6 +72,7 @@ header .menu_side .playlist h4:hover{
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+    transition: .3s linear;
 }
 
 header .menu_side .playlist h4 span{
@@ -360,13 +361,13 @@ header .song_side::before{
     position: absolute;
     background: url('Images/RadhaKrishna-bg.jpg');
     background-size: 108%;
-    width: 290px;
-    height: 290px;
+    width: 250px;
+    height: 250px;
     background-repeat: no-repeat;
     box-shadow: 0 0 40px 5px rgba(54, 226, 236, 0.5);
     border-radius: 50%;
     margin-top: 25px;
-    margin-left: 38%;
+    margin-left: 40%;
     z-index: -1;
 }
 header .song_side{
@@ -448,4 +449,49 @@ header .song_side nav .user img{
     height: 100%;
     border-radius: 50%;
     box-shadow: 2px 2px 8px #121213;
+}
+header .song_side .content{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    padding-top: 20px;
+}
+header .song_side .content h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+header .song_side .content p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #4c5262;
+    margin: 5px;
+}
+header .song_side .content .buttons{
+    margin-top: 15px;
+}
+header .song_side .content .buttons button{
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border: 2px solid #36e2ec;
+    background: #5adae0;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+header .song_side .content .buttons button:nth-child(2){
+    margin-left: 10px;
+}
+header .song_side .content .buttons button:hover{
+    background: none;
+    color: #36e2ec; 
+}
+header .song_side .content .buttons button:nth-child(2){
+    background: none;
+    color: #36e2ec; 
+}
+header .song_side .content .buttons button:nth-child(2):hover{
+    background: #36e2ec;
+    color: #fff; 
 }
